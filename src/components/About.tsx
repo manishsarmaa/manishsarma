@@ -1,0 +1,30 @@
+
+import React from 'react';
+import { Card, CardContent } from "@/components/ui/card";
+
+const About = () => {
+  return (
+    <section id="about" className="py-16 bg-gray-50">
+      <div className="section-container">
+        <h2 className="section-title">About Me</h2>
+        <div className="max-w-4xl mx-auto">
+          <Card className="shadow-lg animate-fade-in">
+            <CardContent className="p-6 md:p-8">
+              <p className="text-gray-600 mb-4">
+                I'm an aspiring Data Analyst with a strong foundation in Excel, Power BI, SQL, and Python—tools I use to turn raw data into clear, actionable insights. With a Bachelor's degree in Computer Engineering, I discovered my passion for data analysis while exploring patterns, trends, and stories hidden in numbers.
+              </p>
+              <p className="text-gray-600 mb-4">  
+                Though I haven't worked in a formal corporate setting yet, I've completed multiple business-focused data projects, which you'll find in my portfolio below. Each one showcases my ability to solve real-world problems through data, whether it's cleaning datasets, building dashboards, or drawing strategic conclusions.
+              </p>
+              <p className="text-gray-600">  
+                I'm now looking to bring my skills, curiosity, and problem-solving mindset into a dynamic team where I can grow and make a real impact through data.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
