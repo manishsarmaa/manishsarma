@@ -22,11 +22,11 @@ const Hero = () => {
       <div className="section-container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6 animate-fade-in">
-            <span className="block">Manish Sharma</span>
-            <span className="block gradient-text mt-2">Data Analyst Portfolio</span>
+            <span className="block"> Hii, I'm Manish Sharma👋</span>
+            <span className="block gradient-text mt-2">Data Analyst </span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto dark:text-gray-300 animate-fade-in">
-            Welcome to my portfolio showcasing how I transform raw data into meaningful business insights with Excel, Power BI, SQL, and Python.
+            Welcome to my portfolio showcasing how I transform raw data into meaningful business insights with Excel, Tableau, Power BI, SQL, and Python.
           </p>
           <div className="mt-10 flex justify-center gap-4 animate-fade-in">
             <Button onClick={scrollToProjects} size="lg" className="shadow-lg transition-all hover:scale-105">

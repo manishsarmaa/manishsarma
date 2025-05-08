@@ -24,35 +24,27 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Sales Analysis",
-      description: "Analyzed 3 years of e-commerce data to identify customer buying patterns and seasonal trends. Created interactive Power BI dashboard for monitoring KPIs and sales performance.",
-      image: "/placeholder.svg",
-      tools: ["Excel", "Power BI", "SQL"],
-      link: "#"
+      title: "Indian Startup Analysis Dashboard",
+      description: "Analyzed Indian startup ecosystem data to uncover funding trends, investor activity, and sector performance. Developed an interactive Power BI dashboard with time-based filters to track investment trends, startup distribution by city, and success vs failure rates.",
+      image: "/startup.pmg",
+      tools: ["Excel", "Power BI", "DAX"],
+      link: "https://github.com/manishsarmaa/India_Startup_powerbi"
     },
     {
       id: 2,
-      title: "Customer Segmentation Analysis",
-      description: "Implemented RFM analysis and K-means clustering to segment customers based on purchasing behavior. Created visualizations to help marketing team target specific customer groups efficiently.",
-      image: "/placeholder.svg",
+      title: "Crime Analysis In LA",
+      description: "Conducted time-series analysis of Los Angeles crime data to examine shifts in crime patterns before, during, and after COVID-19. Used Pandas, NumPy, and Seaborn for trend analysis; implemented geographic heatmaps with Folium to visualize location-based crime intensity.",
+      image: "/crime.png",
       tools: ["Python", "Pandas", "Matplotlib", "Scikit-learn"],
-      link: "#"
+      link: "https://github.com/manishsarmaa/LA_crime"
     },
     {
       id: 3,
-      title: "Supply Chain Optimization",
-      description: "Built a predictive model to forecast inventory needs and optimize order quantities. Reduced stockouts by 18% and improved inventory turnover by analyzing historical data patterns.",
-      image: "/placeholder.svg",
+      title: "NIfty 50 Dashborad",
+      description: "Designed an interactive Tableau dashboard to analyze Nifty 50 stock performance, providing insights into key financial metrics and market trends. Used ETL processes with Pandas and NumPy to clean and prepare market data for visualization.",
+      image: "/stock.png",
       tools: ["SQL", "Power BI", "Python", "Excel"],
-      link: "#"
-    },
-    {
-      id: 4,
-      title: "HR Analytics Dashboard",
-      description: "Developed comprehensive HR analytics dashboard to track employee performance, attrition rates, and department efficiency. Provided actionable insights leading to 15% reduction in turnover.",
-      image: "/placeholder.svg",
-      tools: ["Power BI", "Excel", "DAX"],
-      link: "#"
+      link: "https://github.com/manishsarmaa/nifty50stock-anlaysis"
     },
   ];
 

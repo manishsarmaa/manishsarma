@@ -19,15 +19,15 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-primary" />
-                  <span>youremail@example.com</span>
+                  <span>maniishsarmaa@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Linkedin className="h-5 w-5 text-primary" />
-                  <a href="#" className="hover:text-primary transition-colors">linkedin.com/in/yourprofile</a>
+                  <a href="#" className="hover:text-primary transition-colors">https://shorturl.at/RIFsY</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <Github className="h-5 w-5 text-primary" />
-                  <a href="#" className="hover:text-primary transition-colors">github.com/yourusername</a>
+                  <a href="#" className="hover:text-primary transition-colors">github.com/manishsarmaa</a>
                 </div>
               </div>
               

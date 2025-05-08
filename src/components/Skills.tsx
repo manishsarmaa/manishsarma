@@ -10,10 +10,11 @@ import { Progress } from "@/components/ui/progress";
 
 const Skills = () => {
   const technicalSkills = [
-    { name: 'Excel', proficiency: 90 },
+    { name: 'Excel', proficiency: 75 },
     { name: 'Power BI', proficiency: 85 },
-    { name: 'SQL', proficiency: 80 },
+    { name: 'SQL', proficiency: 90 },
     { name: 'Python', proficiency: 75 },
+    { name: 'Tableau', proficiency: 80 },
     { name: 'Data Cleaning', proficiency: 85 },
     { name: 'Data Visualization', proficiency: 90 }
   ];
