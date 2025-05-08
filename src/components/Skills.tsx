@@ -7,7 +7,7 @@ import {
   CardTitle 
 } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { Tool } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
 
 const Skills = () => {
   const technicalSkills = [
@@ -33,7 +33,7 @@ const Skills = () => {
     <section id="skills" className="py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       <div className="section-container">
         <h2 className="section-title flex items-center justify-center gap-2">
-          <Tool className="h-8 w-8 text-primary animate-pulse" />
+          <Briefcase className="h-8 w-8 text-primary animate-pulse" />
           <span>Tools I Use</span>
         </h2>
         
