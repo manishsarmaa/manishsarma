@@ -13,29 +13,38 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from 'lucide-react';
 
 const Projects = () => {
+  // You can add your projects here
   const projects = [
     {
       id: 1,
-      title: "Sales Data Analysis",
-      description: "Analyzed 5 years of retail sales data to identify seasonal trends and customer buying patterns. Created a Power BI dashboard for real-time sales monitoring.",
+      title: "E-commerce Sales Analysis",
+      description: "Analyzed 3 years of e-commerce data to identify customer buying patterns and seasonal trends. Created interactive Power BI dashboard for monitoring KPIs and sales performance.",
       image: "/placeholder.svg",
       tools: ["Excel", "Power BI", "SQL"],
       link: "#"
     },
     {
       id: 2,
-      title: "Customer Segmentation",
-      description: "Used Python to perform customer segmentation based on purchasing behavior. Created visualizations to help marketing team target specific customer groups.",
+      title: "Customer Segmentation Analysis",
+      description: "Implemented RFM analysis and K-means clustering to segment customers based on purchasing behavior. Created visualizations to help marketing team target specific customer groups efficiently.",
       image: "/placeholder.svg",
-      tools: ["Python", "Pandas", "Matplotlib"],
+      tools: ["Python", "Pandas", "Matplotlib", "Scikit-learn"],
       link: "#"
     },
     {
       id: 3,
-      title: "Inventory Management Dashboard",
-      description: "Developed an inventory tracking system using SQL and Power BI that reduced stockouts by 15% and improved inventory turnover.",
+      title: "Supply Chain Optimization",
+      description: "Built a predictive model to forecast inventory needs and optimize order quantities. Reduced stockouts by 18% and improved inventory turnover by analyzing historical data patterns.",
       image: "/placeholder.svg",
-      tools: ["SQL", "Power BI", "DAX"],
+      tools: ["SQL", "Power BI", "Python", "Excel"],
+      link: "#"
+    },
+    {
+      id: 4,
+      title: "HR Analytics Dashboard",
+      description: "Developed comprehensive HR analytics dashboard to track employee performance, attrition rates, and department efficiency. Provided actionable insights leading to 15% reduction in turnover.",
+      image: "/placeholder.svg",
+      tools: ["Power BI", "Excel", "DAX"],
       link: "#"
     },
   ];
@@ -82,11 +91,11 @@ const Projects = () => {
         
         <div className="mt-12 text-center">
           <p className="text-gray-600 mb-6">
-            Want to see more of my work? Check out my full project repository.
+            Want to see more of my work? Contact me for additional project examples.
           </p>
           <Button variant="outline" asChild>
-            <a href="#" className="flex items-center gap-2">
-              <span>See All Projects</span>
+            <a href="#contact" className="flex items-center gap-2">
+              <span>Contact Me</span>
               <ExternalLink size={16} />
             </a>
           </Button>

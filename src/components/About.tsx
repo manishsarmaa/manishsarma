@@ -10,6 +10,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="shadow-lg animate-fade-in">
             <CardContent className="p-6 md:p-8">
+              <h3 className="text-xl font-bold mb-4">Manish Sharma</h3>
               <p className="text-gray-600 mb-4">
                 I'm an aspiring Data Analyst with a strong foundation in Excel, Power BI, SQL, and Python—tools I use to turn raw data into clear, actionable insights. With a Bachelor's degree in Computer Engineering, I discovered my passion for data analysis while exploring patterns, trends, and stories hidden in numbers.
               </p>
