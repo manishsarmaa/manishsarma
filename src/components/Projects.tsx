@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Image as ImageIcon } from 'lucide-react';
+import { Github, Youtube } from 'lucide-react';
 import { 
   Carousel,
   CarouselContent,
@@ -28,7 +29,8 @@ const Projects = () => {
       description: "Analyzed Indian startup ecosystem data to uncover funding trends, investor activity, and sector performance. Developed an interactive Power BI dashboard with time-based filters to track investment trends, startup distribution by city, and success vs failure rates.",
       image: "/startup.pmg",
       tools: ["Excel", "Power BI", "DAX"],
-      link: "https://github.com/manishsarmaa/India_Startup_powerbi"
+      githubLink: "https://github.com/manishsarmaa/India_Startup_powerbi",
+      youtubeLink: "https://www.youtube.com/watch?v=example1"
     },
     {
       id: 2,
@@ -36,7 +38,8 @@ const Projects = () => {
       description: "Conducted time-series analysis of Los Angeles crime data to examine shifts in crime patterns before, during, and after COVID-19. Used Pandas, NumPy, and Seaborn for trend analysis; implemented geographic heatmaps with Folium to visualize location-based crime intensity.",
       image: "/crime.png",
       tools: ["Python", "Pandas", "Matplotlib", "Scikit-learn"],
-      link: "https://github.com/manishsarmaa/LA_crime"
+      githubLink: "https://github.com/manishsarmaa/LA_crime",
+      youtubeLink: "https://www.youtube.com/watch?v=example2"
     },
     {
       id: 3,
@@ -44,7 +47,8 @@ const Projects = () => {
       description: "Designed an interactive Tableau dashboard to analyze Nifty 50 stock performance, providing insights into key financial metrics and market trends. Used ETL processes with Pandas and NumPy to clean and prepare market data for visualization.",
       image: "/stock.png",
       tools: ["SQL", "Power BI", "Python", "Excel"],
-      link: "https://github.com/manishsarmaa/nifty50stock-anlaysis"
+      githubLink: "https://github.com/manishsarmaa/nifty50stock-anlaysis",
+      youtubeLink: "https://www.youtube.com/watch?v=example3"
     },
   ];
 
@@ -90,12 +94,20 @@ const Projects = () => {
                           <CardDescription className="text-base flex-grow">
                             {project.description}
                           </CardDescription>
-                          <Button variant="default" asChild className="mt-4">
-                            <a href={project.link} className="flex items-center justify-center gap-2">
-                              <span>View Project</span>
-                              <ExternalLink size={16} />
-                            </a>
-                          </Button>
+                          <div className="flex gap-3 mt-4">
+                            <Button variant="default" asChild>
+                              <a href={project.githubLink} className="flex items-center justify-center gap-2">
+                                <Github size={18} />
+                                <span>GitHub</span>
+                              </a>
+                            </Button>
+                            <Button variant="outline" asChild>
+                              <a href={project.youtubeLink} className="flex items-center justify-center gap-2">
+                                <Youtube size={18} />
+                                <span>Watch Demo</span>
+                              </a>
+                            </Button>
+                          </div>
                         </div>
                       </div>
                     </Card>
@@ -141,11 +153,17 @@ const Projects = () => {
                   {project.description}
                 </CardDescription>
               </CardContent>
-              <CardFooter>
-                <Button variant="outline" asChild className="w-full">
-                  <a href={project.link} className="flex items-center justify-center gap-2">
-                    <span>View Project</span>
-                    <ExternalLink size={16} />
+              <CardFooter className="flex gap-3">
+                <Button variant="outline" asChild className="flex-1">
+                  <a href={project.githubLink} className="flex items-center justify-center gap-2">
+                    <Github size={16} />
+                    <span>Source Code</span>
+                  </a>
+                </Button>
+                <Button variant="outline" asChild className="flex-1">
+                  <a href={project.youtubeLink} className="flex items-center justify-center gap-2">
+                    <Youtube size={16} />
+                    <span>Demo</span>
                   </a>
                 </Button>
               </CardFooter>
