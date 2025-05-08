@@ -27,10 +27,10 @@ const Projects = () => {
       id: 1,
       title: "Indian Startup Analysis Dashboard",
       description: "Analyzed Indian startup ecosystem data to uncover funding trends, investor activity, and sector performance. Developed an interactive Power BI dashboard with time-based filters to track investment trends, startup distribution by city, and success vs failure rates.",
-      image: "/startup.pmg",
+      image: "/startup.png",
       tools: ["Excel", "Power BI", "DAX"],
       githubLink: "https://github.com/manishsarmaa/India_Startup_powerbi",
-      youtubeLink: "https://www.youtube.com/watch?v=example1"
+      youtubeLink: "https://youtu.be/_-VdYf9bx8k"
     },
     {
       id: 2,
@@ -46,9 +46,9 @@ const Projects = () => {
       title: "NIfty 50 Dashborad",
       description: "Designed an interactive Tableau dashboard to analyze Nifty 50 stock performance, providing insights into key financial metrics and market trends. Used ETL processes with Pandas and NumPy to clean and prepare market data for visualization.",
       image: "/stock.png",
-      tools: ["SQL", "Power BI", "Python", "Excel"],
+      tools: ["Python", "Tableau", "Data Cleaning", "Excel"],
       githubLink: "https://github.com/manishsarmaa/nifty50stock-anlaysis",
-      youtubeLink: "https://www.youtube.com/watch?v=example3"
+      youtubeLink: "https://youtu.be/UFWHCYxaFZ0"
     },
   ];
 

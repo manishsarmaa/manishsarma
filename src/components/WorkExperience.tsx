@@ -13,26 +13,19 @@ const WorkExperience = () => {
   const experiences = [
     {
       title: 'Data Analyst',
-      company: 'ABC Analytics',
-      period: 'Jan 2023 - Present',
-      description: 'Analyzed complex datasets to identify trends and patterns. Created interactive dashboards using Power BI to visualize key metrics. Performed statistical analysis to derive actionable insights.',
-      skills: ['Power BI', 'SQL', 'Python', 'Excel']
+      company: 'Upwork',
+      period: 'Nov 2024 - Present',
+      description: 'Analyzed complex datasets to identify trends and patterns. Created interactive dashboards using Power BI,Tableau to visualize key metrics. Performed statistical analysis to derive actionable insights.',
+      skills: ['SQL', 'Power BI', 'Excel', 'Data Cleaning', 'Python', 'Tableau']
     },
     {
-      title: 'Junior Data Analyst',
-      company: 'Data Solutions Inc.',
-      period: 'Mar 2021 - Dec 2022',
-      description: 'Assisted in data cleaning and preparation. Generated routine reports and maintained dashboards. Collaborated with cross-functional teams to collect and analyze data.',
-      skills: ['Excel', 'Tableau', 'Data Cleaning']
-    },
-    {
-      title: 'Data Analytics Intern',
-      company: 'Tech Innovations',
-      period: 'Jun 2020 - Feb 2021',
+      title: 'Data Analyst Intern',
+      company: 'Ekaantik Software Solution',
+      period: 'Jan 2025 - Present',
       description: 'Supported data collection and organization. Learned and applied data analysis techniques. Helped in creating basic visualizations of business metrics.',
-      skills: ['Excel', 'Data Visualization', 'SQL Basics']
-    }
-  ];
+      skills: ['Excel', 'Tableau', 'Data Cleaning','Data Visual', 'EDA']
+    },
+    ];
 
   return (
     <section id="experience" className="py-16 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900">

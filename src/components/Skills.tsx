@@ -34,7 +34,7 @@ const Skills = () => {
       <div className="section-container">
         <h2 className="section-title flex items-center justify-center gap-2">
           <Briefcase className="h-8 w-8 text-primary animate-pulse" />
-          <span>Tools I Use</span>
+          <span>Skills</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8">
