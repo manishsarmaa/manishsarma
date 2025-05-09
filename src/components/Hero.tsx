@@ -21,6 +21,9 @@ const Hero = () => {
         </div>
         <div className="absolute top-10 left-10 w-72 h-72 bg-primary/30 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-blue-400/30 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+        {/* Additional light theme gradients */}
+        <div className="absolute top-1/4 right-1/3 w-64 h-64 bg-yellow-300/20 rounded-full filter blur-3xl opacity-30 animate-pulse hidden dark:hidden sm:block"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-56 h-56 bg-green-300/20 rounded-full filter blur-3xl opacity-20 animate-pulse hidden dark:hidden sm:block"></div>
       </div>
 
       <div className="section-container relative z-10">
@@ -28,7 +31,7 @@ const Hero = () => {
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6 animate-fade-in">
             <div className="flex items-center justify-center gap-4">
               <span>Hii, I'm Manish Sharma👋</span>
-              <Avatar className="w-full sm:h-[100px] h-52 object-contain brightness-75 opacity-80">
+              <Avatar className="h-16 w-16 md:h-20 md:w-20 object-cover brightness-90 opacity-90 border-2 border-primary/30">
                 <AvatarImage src="/avatar.jpg" alt="AI Avatar" />
                 <AvatarFallback className="bg-primary text-primary-foreground text-lg">MS</AvatarFallback>
               </Avatar>
@@ -39,7 +42,7 @@ const Hero = () => {
             Welcome to my portfolio showcasing how I transform raw data into meaningful business insights with Excel, Tableau, Power BI, SQL, and Python.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4 animate-fade-in">
-            <Button onClick={scrollToProjects} size="lg" className="shadow-lg transition-all hover:scale-105">
+            <Button onClick={scrollToProjects} size="lg" className="shadow-lg transition-all hover:scale-105 bg-gradient-light dark:bg-primary">
               View My Projects
             </Button>
             <Button variant="outline" size="lg" asChild className="shadow-sm transition-all hover:scale-105">

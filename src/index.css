@@ -90,7 +90,12 @@
   @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400;
 }
 
-/* Light theme gradient backgrounds */
+/* Enhanced light theme gradients */
+:root:not(.dark) .bg-gradient-light {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(37, 99, 235, 0.8));
+  color: white;
+}
+
 :root:not(.dark) .data-background::before {
   background-image: 
     radial-gradient(circle at 20% 20%, rgba(147, 197, 253, 0.15) 0%, transparent 50%),
@@ -100,6 +105,15 @@
 :root:not(.dark) .data-card {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.9));
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+:root:not(.dark) .light-gradient-bg {
+  background: linear-gradient(120deg, #e0f2fe 0%, #dbeafe 50%, #ede9fe 100%);
+}
+
+:root:not(.dark) .light-card-gradient {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(240, 249, 255, 0.9));
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
 }
 
 /* Background patterns - consistent in both themes */
@@ -154,16 +168,6 @@
     radial-gradient(circle at 20% 20%, hsla(var(--primary)/0.1) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, hsla(var(--primary)/0.1) 0%, transparent 50%);
   z-index: -1;
-}
-
-/* Light theme specific gradients */
-:root:not(.dark) .light-gradient-bg {
-  background: linear-gradient(120deg, #e0f2fe 0%, #dbeafe 50%, #ede9fe 100%);
-}
-
-:root:not(.dark) .light-card-gradient {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(240, 249, 255, 0.9));
-  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
 }
 
 /* Animations */
