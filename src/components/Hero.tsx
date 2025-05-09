@@ -31,7 +31,7 @@ const Hero = () => {
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6 animate-fade-in">
             <div className="flex items-center justify-center gap-4">
               <span>Hii, I'm Manish Sharma👋</span>
-              <Avatar className="h-16 w-16 md:h-20 md:w-20 object-cover brightness-90 opacity-90 border-2 border-primary/30">
+              <Avatar className="h-24 w-24 rounded-lg object-cover border-2 border-primary/30 opacity-90 brightness-90">
                 <AvatarImage src="/avatar.jpg" alt="AI Avatar" />
                 <AvatarFallback className="bg-primary text-primary-foreground text-lg">MS</AvatarFallback>
               </Avatar>
