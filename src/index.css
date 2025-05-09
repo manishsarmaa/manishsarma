@@ -90,6 +90,18 @@
   @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400;
 }
 
+/* Light theme gradient backgrounds */
+:root:not(.dark) .data-background::before {
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(147, 197, 253, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(96, 165, 250, 0.15) 0%, transparent 50%);
+}
+
+:root:not(.dark) .data-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.9));
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
 /* Background patterns - consistent in both themes */
 .bg-grid-primary {
   background-size: 40px 40px;
@@ -144,6 +156,16 @@
   z-index: -1;
 }
 
+/* Light theme specific gradients */
+:root:not(.dark) .light-gradient-bg {
+  background: linear-gradient(120deg, #e0f2fe 0%, #dbeafe 50%, #ede9fe 100%);
+}
+
+:root:not(.dark) .light-card-gradient {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(240, 249, 255, 0.9));
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
+}
+
 /* Animations */
 @keyframes float {
   0% { transform: translateY(0px); }
@@ -194,4 +216,20 @@
   height: 2px;
   background: linear-gradient(to right, hsl(var(--primary)), transparent);
   z-index: 1;
+}
+
+/* Fade-in animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
 }
