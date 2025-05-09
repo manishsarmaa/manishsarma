@@ -46,7 +46,7 @@ const Hero = () => {
               <a href="#contact">Contact Me</a>
             </Button>
             <Button variant="secondary" size="lg" className="shadow-lg transition-all hover:scale-105 flex gap-2" asChild>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" download="Manish_Sharma_Resume.pdf">
+              <a href="https://drive.google.com/file/d/1Gv6YkQuitYzm3jwnhMFCsbDYlTGZolfa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <FileDown className="h-5 w-5" />
                 Download Resume
               </a>
