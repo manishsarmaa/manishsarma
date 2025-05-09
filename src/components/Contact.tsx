@@ -32,7 +32,7 @@ const Contact = () => {
                   <span>maniishsarmaa@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <a href="https://www.linkedin.com/in/manish-sharma-655499251/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
+                  <a href="https://www.linkedin.com/in/manishsarmaa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
                     <Linkedin className="h-6 w-6 text-primary" />
                   </a>
                   <span>LinkedIn</span>
@@ -44,7 +44,7 @@ const Contact = () => {
                   <span>GitHub</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <a href="https://twitter.com/your-twitter-handle" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-primary transition-colors">
+                  <a href="https://x.com/manishsarmaa" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-primary transition-colors">
                     <Twitter className="h-6 w-6 text-primary" />
                   </a>
                   <span>Twitter</span>

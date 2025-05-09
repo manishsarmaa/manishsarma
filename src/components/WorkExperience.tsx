@@ -12,18 +12,18 @@ import { Briefcase } from 'lucide-react';
 const WorkExperience = () => {
   const experiences = [
     {
-      title: 'Data Analyst',
-      company: 'Upwork',
-      period: 'Nov 2024 - Present',
-      description: 'Analyzed complex datasets to identify trends and patterns. Created interactive dashboards using Power BI,Tableau to visualize key metrics. Performed statistical analysis to derive actionable insights.',
-      skills: ['SQL', 'Power BI', 'Excel', 'Data Cleaning', 'Python', 'Tableau']
-    },
-    {
       title: 'Data Analyst Intern',
       company: 'Ekaantik Software Solution',
       period: 'Jan 2025 - Present',
       description: 'Supported data collection and organization. Learned and applied data analysis techniques. Helped in creating basic visualizations of business metrics.',
       skills: ['Excel', 'Tableau', 'Data Cleaning','Data Visual', 'EDA']
+    },
+    {
+      title: 'Data Analyst',
+      company: 'Upwork',
+      period: 'Nov 2024 - Present',
+      description: 'Analyzed complex datasets to identify trends and patterns. Created interactive dashboards using Power BI,Tableau to visualize key metrics. Performed statistical analysis to derive actionable insights.',
+      skills: ['SQL', 'Power BI', 'Excel', 'Data Cleaning', 'Python', 'Tableau']
     },
     ];
 

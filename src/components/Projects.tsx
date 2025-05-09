@@ -104,7 +104,7 @@ const Projects = () => {
                             <Button variant="outline" asChild>
                               <a href={project.youtubeLink} className="flex items-center justify-center gap-2">
                                 <Youtube size={18} />
-                                <span>Watch Demo</span>
+                                <span>Explanation</span>
                               </a>
                             </Button>
                           </div>
@@ -163,7 +163,7 @@ const Projects = () => {
                 <Button variant="outline" asChild className="flex-1">
                   <a href={project.youtubeLink} className="flex items-center justify-center gap-2">
                     <Youtube size={16} />
-                    <span>Demo</span>
+                    <span>Explanation</span>
                   </a>
                 </Button>
               </CardFooter>

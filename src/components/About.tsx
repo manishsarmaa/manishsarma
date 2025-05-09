@@ -11,15 +11,14 @@ const About = () => {
           <Card className="shadow-lg animate-fade-in border-0 overflow-hidden bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-30 dark:opacity-20"></div>
             <CardContent className="p-6 md:p-8 relative z-10">
-              <h3 className="text-xl font-bold mb-4 gradient-text">Manish Sharma</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                I'm an aspiring Data Analyst with a strong foundation in Excel, Power BI, SQL, and Python—tools I use to turn raw data into clear, actionable insights. With a Bachelor's degree in Computer Engineering, I discovered my passion for data analysis while exploring patterns, trends, and stories hidden in numbers.
+                I'm Manish Sharma, a data analyst passionate about transforming complex datasets into actionable business insights. With a strong foundation in Computer Science and Engineering, I combine analytical thinking with practical experience to deliver impactful data-driven solutions. My technical expertise spans Python (Pandas, NumPy, Matplotlib), SQL database management, and visualization tools like Tableau and Power BI, enabling me to clean large datasets and develop interactive dashboards that support strategic decision-making.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">  
-                Though I haven't worked in a formal corporate setting yet, I've completed multiple business-focused data projects, which you'll find in my portfolio below. Each one showcases my ability to solve real-world problems through data, whether it's cleaning datasets, building dashboards, or drawing strategic conclusions.
+                My professional journey includes hands-on experience with real-time data analysis projects and freelance work where I've consistently delivered actionable insights for diverse clients. My portfolio showcases projects like the Nifty 50 Stock Analysis Dashboard featuring interactive technical indicators and candlestick patterns, and the Startup Growth in India analysis with dynamic investor tracking and sector-wise performance metrics. These projects demonstrate my ability to identify meaningful patterns within data and present them as clear visual narratives.
               </p>
               <p className="text-gray-600 dark:text-gray-300">  
-                I'm now looking to bring my skills, curiosity, and problem-solving mindset into a dynamic team where I can grow and make a real impact through data.
+                Beyond technical skills, I excel in cross-functional collaboration, project management, and maintain a commitment to continuous learning through certifications in Data Analysis and SQL programming. I thrive on the challenge of extracting meaningful patterns from data chaos and using those insights to create tangible business impact. I'm currently seeking opportunities to leverage my analytical skills in a dynamic environment where data drives innovation and decision-making. Let's connect and explore how my data expertise can help solve your business challenges.
               </p>
             </CardContent>
           </Card>

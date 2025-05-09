@@ -29,7 +29,7 @@ const Hero = () => {
             <div className="flex items-center justify-center gap-4">
               <span>Hii, I'm Manish Sharma👋</span>
               <Avatar className="h-12 w-12 border-2 border-primary">
-                <AvatarImage src="/avatar.png" alt="AI Avatar" />
+                <AvatarImage src="/avatar.jpg" alt="AI Avatar" />
                 <AvatarFallback className="bg-primary text-primary-foreground text-lg">AI</AvatarFallback>
               </Avatar>
             </div>

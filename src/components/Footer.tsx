@@ -28,10 +28,10 @@ const Footer = () => {
             <a href="https://github.com/manishsarmaa" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="GitHub">
               <Github className="h-5 w-5" />
             </a>
-            <a href="https://twitter.com/your-twitter-handle" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Twitter">
+            <a href="https://x.com/manishsarmaa" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Twitter">
               <Twitter className="h-5 w-5" />
             </a>
-            <a href="https://www.linkedin.com/in/manish-sharma-655499251/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/manishsarmaa/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5" />
             </a>
           </div>
