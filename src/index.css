@@ -90,26 +90,19 @@
   @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400;
 }
 
-/* Background patterns */
+/* Background patterns - consistent in both themes */
 .bg-grid-primary {
   background-size: 40px 40px;
   background-image: 
-    linear-gradient(to right, rgba(0, 0, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 255, 0.1) 1px, transparent 1px);
-}
-
-.bg-grid-secondary {
-  background-size: 40px 40px;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    linear-gradient(to right, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
 }
 
 /* Data visualization inspired elements */
 .chart-line {
   position: relative;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary-color, #3b82f6) 0%, transparent 100%);
+  background: linear-gradient(90deg, var(--primary-color, hsl(var(--primary))) 0%, transparent 100%);
 }
 
 .chart-line::before {
@@ -118,7 +111,7 @@
   height: 8px;
   width: 8px;
   border-radius: 50%;
-  background: var(--primary-color, #3b82f6);
+  background: var(--primary-color, hsl(var(--primary)));
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -129,10 +122,10 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--primary-color, #3b82f6);
+  background-color: var(--primary-color, hsl(var(--primary)));
 }
 
-/* Data-driven backgrounds */
+/* Data-driven backgrounds - consistent in both themes */
 .data-background {
   position: relative;
   overflow: hidden;
@@ -146,8 +139,8 @@
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 20%, hsla(var(--primary)/0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, hsla(var(--primary)/0.1) 0%, transparent 50%);
   z-index: -1;
 }
 
@@ -172,9 +165,9 @@
   animation: pulse-data 2s ease-in-out infinite;
 }
 
-/* Data visualization gradients */
+/* Data visualization gradients - consistent in both themes */
 .gradient-data-blue {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.8) 0%, rgba(37, 99, 235, 0.8) 100%);
+  background: linear-gradient(135deg, hsla(var(--primary)/0.8) 0%, hsla(var(--primary)/0.6) 100%);
 }
 
 .gradient-data-purple {
@@ -182,13 +175,13 @@
 }
 
 .gradient-data-cyan {
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.8) 0%, rgba(59, 130, 246, 0.8) 100%);
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.8) 0%, hsla(var(--primary)/0.8) 100%);
 }
 
-/* Card with data-inspired design */
+/* Card with data-inspired design - consistent in both themes */
 .data-card {
   @apply relative overflow-hidden rounded-lg border border-border p-6;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(135deg, hsla(var(--card)/0.9), hsla(var(--card)/0.8));
   backdrop-filter: blur(10px);
 }
 
@@ -199,6 +192,6 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(to right, var(--primary), transparent);
+  background: linear-gradient(to right, hsl(var(--primary)), transparent);
   z-index: 1;
 }

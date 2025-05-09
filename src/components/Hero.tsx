@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { FileDown } from 'lucide-react';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
       {/* Background pattern with enhanced visual */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0 bg-grid-primary/[0.2] [mask-image:linear-gradient(0deg,transparent,black)] dark:bg-grid-secondary/[0.2]" />
+          <div className="absolute inset-0 bg-grid-primary dark:bg-grid-primary [mask-image:linear-gradient(0deg,transparent,black)]" />
         </div>
         <div className="absolute top-10 left-10 w-72 h-72 bg-primary/30 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-blue-400/30 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
@@ -25,7 +26,13 @@ const Hero = () => {
       <div className="section-container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6 animate-fade-in">
-            <span className="block"> Hii, I'm Manish Sharma👋</span>
+            <div className="flex items-center justify-center gap-4">
+              <span>Hii, I'm Manish Sharma👋</span>
+              <Avatar className="h-12 w-12 border-2 border-primary">
+                <AvatarImage src="/avatar.png" alt="AI Avatar" />
+                <AvatarFallback className="bg-primary text-primary-foreground text-lg">AI</AvatarFallback>
+              </Avatar>
+            </div>
             <span className="block gradient-text mt-2">Data Analyst </span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto dark:text-gray-300 animate-fade-in">
