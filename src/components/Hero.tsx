@@ -36,9 +36,11 @@ const Hero = () => {
               Welcome to my portfolio showcasing how I transform raw data into meaningful business insights with Excel, Tableau, Power BI, SQL, and Python.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 animate-fade-in">
-              <Button onClick={scrollToProjects} size="lg" className="shadow-lg transition-all hover:scale-105 bg-gradient-light dark:bg-primary">
-                View My Projects
-              </Button>
+              <Button size="lg" asChild className="shadow-lg transition-all hover:scale-105 bg-gradient-light dark:bg-primary">
+              <a href="https://www.upwork.com/freelancers/~0126ec4c395a39f793" target="_blank" rel="noopener noreferrer">
+                Hire Me
+              </a>
+            </Button>
               <Button variant="outline" size="lg" asChild className="shadow-sm transition-all hover:scale-105">
                 <a href="#contact">Contact Me</a>
               </Button>
