@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Github, FileDown, Link as LinkIcon } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -18,16 +18,26 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-primary" />
+                  <a href="mailto:maniishsarmaa@gmail.com" aria-label="Email" className="hover:text-primary transition-colors">
+                    <Mail className="h-6 w-6 text-primary" />
+                  </a>
                   <span>maniishsarmaa@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Linkedin className="h-5 w-5 text-primary" />
-                  <a href="#" className="hover:text-primary transition-colors">https://shorturl.at/RIFsY</a>
+                  <a href="https://www.linkedin.com/in/manish-sharma-655499251/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
+                    <Linkedin className="h-6 w-6 text-primary" />
+                  </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Github className="h-5 w-5 text-primary" />
-                  <a href="#" className="hover:text-primary transition-colors">github.com/manishsarmaa</a>
+                  <a href="https://github.com/manishsarmaa" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-primary transition-colors">
+                    <Github className="h-6 w-6 text-primary" />
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <a href="https://drive.google.com/file/d/your-resume-file-id/view" target="_blank" rel="noopener noreferrer" aria-label="Resume" className="hover:text-primary transition-colors">
+                    <LinkIcon className="h-6 w-6 text-primary" />
+                  </a>
+                  <span>View Resume on Drive</span>
                 </div>
               </div>
               
