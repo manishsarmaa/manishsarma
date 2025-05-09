@@ -53,7 +53,7 @@ const Hero = () => {
 
           {/* RIGHT SIDE: Avatar */}
           <div className="md:w-1/3 flex justify-center md:justify-end">
-            <Avatar className="h-58 w-48 rounded-full border-4 border-primary/50 shadow-lg">
+            <Avatar className="h-65 w-48 rounded-full border-4 border-primary/50 shadow-lg">
               <AvatarImage src="/avatar.jpg" alt="Manish Sharma" />
               <AvatarFallback className="bg-primary text-primary-foreground text-2xl">MS</AvatarFallback>
             </Avatar>
