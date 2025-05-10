@@ -8,7 +8,7 @@ import { Mail, Linkedin, Github, Twitter } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 relative">
+    <section id="contact" className="py-16 relative scroll-reveal">
       {/* Background data-driven visualization elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-primary/5 blur-xl"></div>
@@ -21,7 +21,7 @@ const Contact = () => {
         <h2 className="section-title">Get In Touch</h2>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="shadow-md animate-fade-in bg-gradient-to-br from-card to-secondary/20">
+          <Card className="shadow-md animate-fade-in bg-gradient-to-br from-card to-secondary/20 scroll-reveal">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
               <div className="space-y-4">
@@ -62,7 +62,7 @@ const Contact = () => {
             </CardContent>
           </Card>
           
-          <Card className="shadow-md animate-fade-in bg-gradient-to-br from-card to-secondary/20">
+          <Card className="shadow-md animate-fade-in bg-gradient-to-br from-card to-secondary/20 scroll-reveal">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">Send Me a Message</h3>
               <form className="space-y-4">
@@ -78,7 +78,7 @@ const Contact = () => {
                 <div>
                   <Textarea placeholder="Your Message" className="min-h-32 bg-background/50 backdrop-blur-sm" />
                 </div>
-                <Button className="w-full bg-gradient-to-r from-primary/80 to-blue-500/80 hover:from-primary hover:to-blue-500 transition-all duration-300">Send Message</Button>
+                <Button className="w-full bg-gradient-to-r from-primary/80 to-blue-500/80 hover:from-black hover:to-black hover:text-white dark:hover:from-white dark:hover:to-white dark:hover:text-black transition-all duration-300">Send Message</Button>
               </form>
             </CardContent>
           </Card>

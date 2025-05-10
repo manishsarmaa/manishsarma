@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900">
+    <section id="about" className="py-16 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 scroll-reveal">
       <div className="section-container">
         <h2 className="section-title">About Me</h2>
         <div className="max-w-4xl mx-auto">

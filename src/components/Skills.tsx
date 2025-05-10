@@ -30,7 +30,7 @@ const Skills = () => {
   ];
   
   return (
-    <section id="skills" className="py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <section id="skills" className="py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 scroll-reveal">
       <div className="section-container">
         <h2 className="section-title flex items-center justify-center gap-2">
           <Briefcase className="h-8 w-8 text-primary animate-pulse" />

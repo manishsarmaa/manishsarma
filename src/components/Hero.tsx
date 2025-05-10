@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 relative overflow-hidden">
+    <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 relative overflow-hidden scroll-reveal">
       {/* Background pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 opacity-5">
@@ -60,7 +60,7 @@ const Hero = () => {
             <div className="relative group transition-transform hover:scale-105 duration-300">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-75 blur-sm group-hover:opacity-100 transition duration-300"></div>
               <Avatar className="h-56 w-56 sm:h-60 sm:w-60 rounded-full border-4 border-primary/50 shadow-lg relative">
-                <AvatarImage src="/avatar.jpg" alt="Manish Sharma" className="object-cover" />
+                <AvatarImage src="/avatar.jpg" alt="Manish Sharma" className="w-full sm:h-[100px] h-52 object-contain brightness-75 opacity-80" />
                 <AvatarFallback className="bg-primary text-primary-foreground text-4xl">MS</AvatarFallback>
               </Avatar>
             </div>

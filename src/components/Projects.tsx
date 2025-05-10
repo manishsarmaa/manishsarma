@@ -56,12 +56,12 @@ const Projects = () => {
   const featuredProjects = projects.slice(0, 3);
 
   return (
-    <section id="projects" className="py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <section id="projects" className="py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 scroll-reveal">
       <div className="section-container">
         <h2 className="section-title">My Projects</h2>
         
         {/* Featured Projects Carousel */}
-        <div className="mb-16">
+        <div className="mb-16 scroll-reveal">
           <h3 className="text-xl font-semibold mb-6 text-center">Featured Work</h3>
           <Carousel className="w-full max-w-5xl mx-auto">
             <CarouselContent>
@@ -95,13 +95,13 @@ const Projects = () => {
                             {project.description}
                           </CardDescription>
                           <div className="flex gap-3 mt-4">
-                            <Button variant="default" asChild>
+                            <Button variant="default" asChild className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">
                               <a href={project.githubLink} className="flex items-center justify-center gap-2">
                                 <Github size={18} />
                                 <span>GitHub</span>
                               </a>
                             </Button>
-                            <Button variant="outline" asChild>
+                            <Button variant="outline" asChild className="hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">
                               <a href={project.youtubeLink} className="flex items-center justify-center gap-2">
                                 <Youtube size={18} />
                                 <span>Explanation</span>
@@ -124,8 +124,12 @@ const Projects = () => {
         
         {/* All Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map(project => (
-            <Card key={project.id} className="shadow-md overflow-hidden flex flex-col animate-fade-in transition-all hover:shadow-xl hover:-translate-y-1">
+          {projects.map((project, index) => (
+            <Card 
+              key={project.id} 
+              className="shadow-md overflow-hidden flex flex-col animate-fade-in transition-all hover:shadow-xl hover:-translate-y-1 scroll-reveal" 
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
               <div className="aspect-video overflow-hidden">
                 {project.image ? (
                   <img 
@@ -154,13 +158,13 @@ const Projects = () => {
                 </CardDescription>
               </CardContent>
               <CardFooter className="flex gap-3">
-                <Button variant="outline" asChild className="flex-1">
+                <Button variant="outline" asChild className="flex-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">
                   <a href={project.githubLink} className="flex items-center justify-center gap-2">
                     <Github size={16} />
                     <span>Source Code</span>
                   </a>
                 </Button>
-                <Button variant="outline" asChild className="flex-1">
+                <Button variant="outline" asChild className="flex-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">
                   <a href={project.youtubeLink} className="flex items-center justify-center gap-2">
                     <Youtube size={16} />
                     <span>Explanation</span>
@@ -175,7 +179,7 @@ const Projects = () => {
           <p className="text-gray-600 dark:text-gray-300 mb-6">
             Want to see more of my work? Contact me for additional project examples.
           </p>
-          <Button variant="outline" asChild className="shadow-sm transition-all hover:scale-105">
+          <Button variant="outline" asChild className="shadow-sm transition-all hover:scale-105 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">
             <a href="#contact" className="flex items-center gap-2">
               <span>Contact Me</span>
               <ExternalLink size={16} />
