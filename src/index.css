@@ -331,3 +331,47 @@
 .animate-fade-in {
   animation: fade-in 0.5s ease-out;
 }
+
+/* Enhanced background for light theme */
+.bg-gradient-radial {
+  background-color: #ffffff;
+  background-image: radial-gradient(at 50% 0%, rgba(59, 130, 246, 0.1) 0px, transparent 50%),
+                    radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.1) 0px, transparent 50%),
+                    radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.1) 0px, transparent 50%),
+                    radial-gradient(at 0% 100%, rgba(245, 158, 11, 0.1) 0px, transparent 50%);
+}
+
+/* Light theme special elements */
+:root:not(.dark) .themed-card {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  transition: all 0.3s ease;
+}
+
+:root:not(.dark) .themed-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.2);
+}
+
+:root:not(.dark) .themed-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: all 0.6s ease;
+}
+
+:root:not(.dark) .themed-card:hover::before {
+  left: 100%;
+}
+
+/* Scroll reveal animation */
+.scroll-reveal {
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}

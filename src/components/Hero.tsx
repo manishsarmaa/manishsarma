@@ -59,14 +59,19 @@ const Hero = () => {
           <div className="md:w-1/3 flex justify-center md:justify-end">
             <div className="relative group transition-transform hover:scale-105 duration-300">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-75 blur-sm group-hover:opacity-100 transition duration-300"></div>
-              <Avatar className="h-56 w-56 sm:h-60 sm:w-60 rounded-full border-4 border-primary/50 shadow-lg relative">
-                <AvatarImage src="/avatar.jpg" alt="Manish Sharma" className="w-full sm:h-[100px] h-52 object-contain brightness-75 opacity-80" />
+              <Avatar className="h-56 w-56 sm:h-64 sm:w-64 rounded-full border-4 border-primary/50 shadow-lg relative">
+                <AvatarImage src="/avatar.jpg" alt="Manish Sharma" className="object-cover" />
                 <AvatarFallback className="bg-primary text-primary-foreground text-4xl">MS</AvatarFallback>
               </Avatar>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Light theme decoration - floating bubbles */}
+      <div className="floating-bubble bubble-1 hidden dark:hidden"></div>
+      <div className="floating-bubble bubble-2 hidden dark:hidden"></div>
+      <div className="floating-bubble bubble-3 hidden dark:hidden"></div>
     </section>
   );
 };

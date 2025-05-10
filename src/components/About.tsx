@@ -8,7 +8,7 @@ const About = () => {
       <div className="section-container">
         <h2 className="section-title">About Me</h2>
         <div className="max-w-4xl mx-auto">
-          <Card className="shadow-lg animate-fade-in border-0 overflow-hidden bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm">
+          <Card className="shadow-lg animate-fade-in border-0 overflow-hidden bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm themed-card">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-30 dark:opacity-20"></div>
             <CardContent className="p-6 md:p-8 relative z-10">
               <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -24,6 +24,10 @@ const About = () => {
           </Card>
         </div>
       </div>
+      
+      {/* Light theme decorative elements */}
+      <div className="absolute bottom-10 right-10 w-32 h-32 bg-blue-200/20 rounded-full filter blur-xl opacity-30 animate-float hidden dark:hidden"></div>
+      <div className="absolute top-20 left-20 w-24 h-24 bg-green-200/20 rounded-full filter blur-xl opacity-30 animate-float hidden dark:hidden"></div>
     </section>
   );
 };
