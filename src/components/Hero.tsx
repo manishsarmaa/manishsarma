@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { FileDown } from 'lucide-react';
@@ -29,25 +30,26 @@ const Hero = () => {
           {/* LEFT SIDE: Text */}
           <div className="md:w-2/3">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6 animate-fade-in">
-              <span>Manish Sharma</span>
-              <span className="block gradient-text mt-2">Data Analyst</span>
+              <span className="transition-colors duration-300 hover:text-primary">Manish Sharma</span>
+              <span className="block gradient-text mt-2 transition-all duration-300 hover:scale-105">Data Analyst</span>
             </h1>
-            <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-xl animate-fade-in">
+            <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-xl animate-fade-in transition-colors duration-300 hover:text-primary/80">
               Welcome to my portfolio showcasing how I transform raw data into meaningful business insights with Excel, Tableau, Power BI, SQL, and Python.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 animate-fade-in">
-              <Button size="lg" asChild className="shadow-lg transition-all hover:scale-105 bg-gradient-light dark:bg-primary">
-              <a href="https://www.upwork.com/freelancers/~0126ec4c395a39f793" target="_blank" rel="noopener noreferrer">
-                Hire Me
-              </a>
-            </Button>
-              <Button variant="outline" size="lg" asChild className="shadow-sm transition-all hover:scale-105">
+              <Button size="lg" asChild className="shadow-lg transition-all hover:scale-110 hover:shadow-xl bg-gradient-light dark:bg-primary group relative overflow-hidden">
+                <a href="https://www.upwork.com/freelancers/~0126ec4c395a39f793" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <span className="z-10 relative transition-transform group-hover:translate-x-1">Hire Me</span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity transform -skew-x-12 -z-0"></span>
+                </a>
+              </Button>
+              <Button variant="outline" size="lg" asChild className="shadow-sm transition-all hover:scale-105 hover:bg-gray-100 dark:hover:bg-gray-800">
                 <a href="#contact">Contact Me</a>
               </Button>
-              <Button variant="secondary" size="lg" className="shadow-lg transition-all hover:scale-105 flex gap-2" asChild>
+              <Button variant="secondary" size="lg" className="shadow-lg transition-all hover:scale-105 hover:bg-secondary/80 flex gap-2" asChild>
                 <a href="https://drive.google.com/file/d/1Gv6YkQuitYzm3jwnhMFCsbDYlTGZolfa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  <FileDown className="h-5 w-5" />
-                  Download Resume
+                  <FileDown className="h-5 w-5 transition-transform group-hover:translate-y-1" />
+                  <span className="transition-colors hover:text-primary">Download Resume</span>
                 </a>
               </Button>
             </div>
@@ -55,10 +57,13 @@ const Hero = () => {
 
           {/* RIGHT SIDE: Avatar */}
           <div className="md:w-1/3 flex justify-center md:justify-end">
-            <Avatar className="h-45 w-48 rounded-full border-4 border-primary/50 shadow-lg">
-              <AvatarImage src="/avatar.jpg" alt="Manish Sharma" />
-              <AvatarFallback className="bg-primary text-primary-foreground text-2xl">MS</AvatarFallback>
-            </Avatar>
+            <div className="relative group transition-transform hover:scale-105 duration-300">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-75 blur-sm group-hover:opacity-100 transition duration-300"></div>
+              <Avatar className="h-56 w-56 sm:h-60 sm:w-60 rounded-full border-4 border-primary/50 shadow-lg relative">
+                <AvatarImage src="/avatar.jpg" alt="Manish Sharma" className="object-cover" />
+                <AvatarFallback className="bg-primary text-primary-foreground text-4xl">MS</AvatarFallback>
+              </Avatar>
+            </div>
           </div>
         </div>
       </div>
