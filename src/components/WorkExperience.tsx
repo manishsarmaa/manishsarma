@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { 
   Card, 
   CardContent,
@@ -10,6 +10,39 @@ import {
 import { Briefcase } from 'lucide-react';
 
 const WorkExperience = () => {
+  const experiencesRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+    
+    const handleIntersect: IntersectionObserverCallback = (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-10');
+        }
+      });
+    };
+    
+    const observer = new IntersectionObserver(handleIntersect, observerOptions);
+    
+    const experienceItems = document.querySelectorAll('.experience-item');
+    experienceItems.forEach(item => {
+      item.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+      observer.observe(item);
+    });
+    
+    return () => {
+      experienceItems.forEach(item => {
+        observer.unobserve(item);
+      });
+    };
+  }, []);
+
   const experiences = [
     {
       title: 'Data Analyst Intern',
@@ -25,7 +58,7 @@ const WorkExperience = () => {
       description: 'Analyzed complex datasets to identify trends and patterns. Created interactive dashboards using Power BI,Tableau to visualize key metrics. Performed statistical analysis to derive actionable insights.',
       skills: ['SQL', 'Power BI', 'Excel', 'Data Cleaning', 'Python', 'Tableau']
     },
-    ];
+  ];
 
   return (
     <section id="experience" className="py-16 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900">
@@ -35,15 +68,15 @@ const WorkExperience = () => {
           <span>Work Experience</span>
         </h2>
         
-        <div className="space-y-8 relative">
+        <div className="space-y-8 relative" ref={experiencesRef}>
           {/* Timeline line */}
           <div className="absolute top-2 bottom-0 left-1/2 w-0.5 bg-gradient-to-b from-primary to-primary/30 transform -translate-x-1/2 hidden md:block"></div>
           
           {experiences.map((exp, index) => (
             <div 
               key={index} 
-              className={`flex flex-col md:flex-row gap-6 md:gap-8 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} animate-fade-in`}
-              style={{ animationDelay: `${index * 150}ms` }}
+              className={`experience-item flex flex-col md:flex-row gap-6 md:gap-8 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
+              style={{ transitionDelay: `${index * 200}ms` }}
             >
               <div className="hidden md:flex md:justify-center md:items-start md:pt-6 flex-1">
                 <div className="text-right font-medium text-gray-600 dark:text-gray-300">

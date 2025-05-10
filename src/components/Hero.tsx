@@ -37,19 +37,19 @@ const Hero = () => {
               Welcome to my portfolio showcasing how I transform raw data into meaningful business insights with Excel, Tableau, Power BI, SQL, and Python.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 animate-fade-in">
-              <Button size="lg" asChild className="shadow-lg transition-all hover:scale-110 hover:shadow-xl bg-gradient-light dark:bg-primary group relative overflow-hidden">
+              <Button size="lg" asChild className="shadow-lg transition-all hover:scale-110 hover:shadow-xl bg-gradient-light dark:bg-primary group relative overflow-hidden hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">
                 <a href="https://www.upwork.com/freelancers/~0126ec4c395a39f793" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   <span className="z-10 relative transition-transform group-hover:translate-x-1">Hire Me</span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity transform -skew-x-12 -z-0"></span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-black to-gray-800 dark:from-white dark:to-gray-200 opacity-0 group-hover:opacity-100 transition-opacity transform -skew-x-12 -z-0"></span>
                 </a>
               </Button>
-              <Button variant="outline" size="lg" asChild className="shadow-sm transition-all hover:scale-105 hover:bg-gray-100 dark:hover:bg-gray-800">
+              <Button variant="outline" size="lg" asChild className="shadow-sm transition-all hover:scale-105 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">
                 <a href="#contact">Contact Me</a>
               </Button>
-              <Button variant="secondary" size="lg" className="shadow-lg transition-all hover:scale-105 hover:bg-secondary/80 flex gap-2" asChild>
+              <Button variant="secondary" size="lg" className="shadow-lg transition-all hover:scale-105 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black flex gap-2" asChild>
                 <a href="https://drive.google.com/file/d/1Gv6YkQuitYzm3jwnhMFCsbDYlTGZolfa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <FileDown className="h-5 w-5 transition-transform group-hover:translate-y-1" />
-                  <span className="transition-colors hover:text-primary">Download Resume</span>
+                  <span className="transition-colors">Download Resume</span>
                 </a>
               </Button>
             </div>
