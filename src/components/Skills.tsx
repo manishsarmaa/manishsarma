@@ -26,11 +26,17 @@ const Skills = () => {
     'Communication',
     'Attention to Detail',
     'Adaptability',
-    'Teamwork'
+    'Teamwork',
+    'Leadership',
+    'Time Management',
+    'Project Management',
+    'Analytical Thinking',
+    'Decision Making',
+    'Creativity'
   ];
   
   return (
-    <section id="skills" className="py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 scroll-reveal">
+    <section id="skills" className="py-16 bg-gray-50 dark:bg-gray-900 scroll-reveal">
       <div className="section-container">
         <h2 className="section-title flex items-center justify-center gap-2">
           <Briefcase className="h-8 w-8 text-primary animate-pulse" />
@@ -38,12 +44,11 @@ const Skills = () => {
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="shadow-md animate-fade-in border border-blue-100 dark:border-blue-900/30 overflow-hidden transform transition-all duration-300 hover:shadow-xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent"></div>
-            <CardHeader className="relative z-10">
+          <Card className="shadow-md animate-fade-in border">
+            <CardHeader>
               <CardTitle className="text-xl text-center">Technical Tools</CardTitle>
             </CardHeader>
-            <CardContent className="relative z-10">
+            <CardContent>
               <div className="space-y-6">
                 {technicalSkills.map((skill, index) => (
                   <div 
@@ -57,7 +62,7 @@ const Skills = () => {
                     </div>
                     <Progress 
                       value={skill.proficiency} 
-                      className="h-2 bg-blue-100 dark:bg-blue-900/30" 
+                      className="h-2 bg-gray-100 dark:bg-gray-800" 
                     />
                   </div>
                 ))}
@@ -65,12 +70,11 @@ const Skills = () => {
             </CardContent>
           </Card>
           
-          <Card className="shadow-md animate-fade-in border border-purple-100 dark:border-purple-900/30 overflow-hidden transform transition-all duration-300 hover:shadow-xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent"></div>
-            <CardHeader className="relative z-10">
+          <Card className="shadow-md animate-fade-in border">
+            <CardHeader>
               <CardTitle className="text-xl text-center">Soft Skills</CardTitle>
             </CardHeader>
-            <CardContent className="relative z-10">
+            <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 {softSkills.map((skill, index) => (
                   <div 
