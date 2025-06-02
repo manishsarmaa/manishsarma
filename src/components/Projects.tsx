@@ -34,6 +34,15 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "HR + Performance Analysis Dashboard",
+      description: "Analyzed employee performance and HR data to identify workforce trends, attrition patterns, and departmental productivity. Developed an interactive Power BI dashboard with time-based filters to track key HR metrics, employee distribution by location, and performance ratings across teams.",
+      image: "/Performance.png",
+      tools: ["Excel", "Power BI", "DAX"],
+      githubLink: "https://github.com/manishsarmaa/HR_Dashboard",
+      youtubeLink: "https://youtu.be/e23ICW2siek"
+    },
+    {
+      id: 3,
       title: "Crime Analysis In LA",
       description: "Conducted time-series analysis of Los Angeles crime data to examine shifts in crime patterns before, during, and after COVID-19. Used Pandas, NumPy, and Seaborn for trend analysis; implemented geographic heatmaps with Folium to visualize location-based crime intensity.",
       image: "/crime.png",
@@ -42,7 +51,7 @@ const Projects = () => {
       youtubeLink: "https://www.youtube.com/watch?v=example2"
     },
     {
-      id: 3,
+      id: 4,
       title: "NIfty 50 Dashborad",
       description: "Designed an interactive Tableau dashboard to analyze Nifty 50 stock performance, providing insights into key financial metrics and market trends. Used ETL processes with Pandas and NumPy to clean and prepare market data for visualization.",
       image: "/stock.png",
